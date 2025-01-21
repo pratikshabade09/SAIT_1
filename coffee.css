@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    
+    }
+    
+    #nav {
+    text-align: right;
+    font-size: 20px;
+    height: 30px;
+    background-color: rgb(88 19 18);
+    padding-top: 7px;
+    
+    }
+    
+    .obj {
+    text-decoration: none;
+    color: white;
+    margin-right: 80px;
+    }
+    
+    #wall {
+    color: rgb(248, 83, 18);
+    margin-right: 200px;
+    text-decoration: none;
+    }
+    
+    #line {
+    text-decoration: none;
+    font-size: 20px;
+    color: beige;
+    padding: 10px;
+    background-color: rgb(88 19 18);
+    border-color: rgb(70, 16, 15);
+    border-style: solid;
+    margin-inline:50px;
+    border-radius: 10%
+    }
+    
+    #image {
+    margin: 20px;
+    width: 400px;
+    height: 300px;
+    }
+    
+    #flavourimg {
+    margin-block: 100px;
+    margin-left: 330px;
+    width: 1200px;
+    height: 700px;
+    border-radius: 3%;
+    }
+    
+    #video2{
+    height: 1350px;
+    background-color: rgb(254 223 194);
+    }
+    
+    #video1 {
+    margin-inline-start: 100px;
+    border-radius: 10%;
+    height: 500px;
+    width: 800px;
+    
+    }
+    
+    #note{
+    font-size: 40px;
+    padding: 20px;
+    margin: 20px;
+    }
+    
+    #video3{
+    margin-left: 100px;
+    height: 500px;
+    width: 800;
+    border-radius: 10%;
+    }
+    
