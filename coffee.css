@@ -1,23 +1,23 @@
 *{
     margin: 0px;
-
 }
 
-    #nav {
+#nav {
     text-align: right;
     font-size: 20px;
-    height: 30px;
+    height: 50px;
     background-color: rgb(88 19 18);
-    padding-top: 7px;
-
+    padding-top: 18px;
 }
 
 
 .obj {
     text-decoration: none;
     color: white;
-    margin-right: 80px;
+    margin: 50px;
 }
+
+
 
 #wall {
     color: rgb(248, 83, 18);
@@ -33,14 +33,77 @@
     background-color: rgb(88 19 18);
     border-color: rgb(70, 16, 15);
     border-style: solid;
-    margin-inline:50px;
+    margin-left:820px;
     border-radius: 10%
 }
 
+.hover1 :hover{
+    background-color: rgb(39, 6, 6);
+    border: 4px rgb(100, 25, 25);
+}
+
 #image {
-    margin: 20px;
+    margin-left: 44px;
+    margin-block: 40px;
     width: 400px;
     height: 300px;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for hover */
+}
+
+/* Hover effect on images */
+#imghover a:hover #image {
+    transform: scale(1.05); 
+    opacity: 0.8; 
+}
+
+
+#imghover a:hover {
+    cursor: pointer; 
+}
+
+#imghover{
+    background-color: rgb(244 214 184);
+}
+
+#lowerimg{
+    margin-top: 0px;
+    padding: 30px;
+    background-color:rgb(244 214 184)
+}
+
+/* #image {
+    margin-left:44px;
+    margin-block: 40px;
+    width: 400px;
+    height: 300px;
+} */
+
+#flavourimg {
+    margin-block: 100px;
+    margin-left: 330px;
+    width: 1200px;
+    height: 700px;
+    border-radius: 3%;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect on the image */
+#flavourimg:hover {
+    transform: scale(1.05); /* Slightly enlarge the image */
+    opacity: 0.9; /* Reduce opacity to give a hover effect */
+}
+
+/* #flavourimg {
+    margin-block: 100px;
+    margin-left: 330px;
+    width: 1200px;
+    height: 700px;
+    border-radius: 3%;
+} */
+
+#flavourimg-container {
+    position: relative; /* To position text over the image */
+    display: inline-block; /* Keep the image's original size and alignment */
 }
 
 #flavourimg {
@@ -49,33 +112,85 @@
     width: 1200px;
     height: 700px;
     border-radius: 3%;
+    transition: opacity 0.3s ease; /* Smooth transition for fading the image */
 }
 
-#video2{
+/* Text styling */
+#flavour-text {
+    position: absolute;
+    top: 30%; /* Vertically center the text */
+    left: 50%; /* Horizontally center the text */
+    transform: translate(-50%, -50%);
+    font-family:'Times New Roman', Times, serif; /* Example coffee-style font */
+    font-size: 60px; /* Make the text bigger */
+    font-weight: bold; /* Bold for more impact */
+    color: #f8f2f0; /* Coffee-inspired color */
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5); /* Stronger shadow to make text stand out */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition for fading in text */
+}
+
+/* Hover effect */
+#flavourimg-container:hover #flavourimg {
+    opacity: 0.8; /* Image becomes faint */
+}
+
+#flavourimg-container:hover #flavour-text {
+    opacity: 1; /* Text becomes visible */
+}
+
+#left{
+    margin-left: 100px;
+   
+}
+
+#right{
+    margin-left: 900px;
+}
+
+.bg2{
+    margin-right: 10%;
+}
+
+#video2
+{
     height: 1350px;
     background-color: rgb(254 223 194);
 }
 
 #video1 {
     margin-inline-start: 100px;
-    border-radius: 10%;
+    border-radius: 3%;
     height: 500px;
     width: 800px;
     
 }
 
-#note,#reviews{
+#note1{
+    
     font-size: 40px;
     padding: 20px;
     margin: 20px;
     
 }
 
+#note2{
+    font-size: 40px;
+    padding: 40px;
+    margin-left:500px;
+}
+
+#reviews{
+    font-size: 40px;
+    padding: 20px;
+    margin: 20px;
+}
+
 #video3{
-    margin-left: 100px;
+    margin-right: 200px;
     height: 500px;
     width: 800;
-    border-radius: 10%;
+    border-radius: 3%;
 }
 
 .testimonial{
@@ -97,13 +212,15 @@
 }
 
 .qual{
-    margin-left: 150px;
+    margin-left: 50px;
 }
 
 .words{
     margin-block: 10px;
     margin-left: 50px;
 }
+
+
 
 footer {
     background-color:  rgb(88 19 18);
@@ -134,10 +251,10 @@ footer {
     text-decoration: underline;
   }
   
-  .options{
+  /* .option{
     font-weight: bold;
-  }
-  
+  } */
+
   footer p {
     margin-top: 20px;
     font-size: 14px;
