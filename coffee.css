@@ -2,35 +2,18 @@
     margin: 0px;
 }
 
-/* #nav {
-    text-align: right;
-    font-size: 20px;
-    height: 50px;
-    background-color: rgb(88 19 18);
-    padding-top: 18px;
-    position:fixed;
-    top:0;
-    width:100%
-}
-
-
-.obj {
-    text-decoration: none;
-    color: white;
-    margin: 50px;
-} */
-
 #nav {
     text-align: right;
     font-size: 20px;
     height: 50px;
-    background-color: rgb(88, 19, 18); /* Default background */
+    line-height: 50%;
+    background-color: rgb(88, 19, 18); 
     padding-top: 18px;
     position: sticky;
     top: 0;
     width: 100%;
-    z-index: 1000; /* Ensure the navbar stays on top */
-    transition: background-color 0.3s ease; /* Smooth transition */
+    z-index: 1000;
+    transition: background-color 0.3s ease;
 }
 
 #nav::after {
@@ -41,24 +24,28 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0); /* Initially transparent */
+    background: rgba(255, 255, 255, 0); 
     transition: background 0.3s ease;
-    z-index: -1; /* Ensure the pseudo-element is behind the content */
+    z-index: -1; 
 }
 
-/* When the navbar becomes sticky, change the background */
 #nav:is(:not(:first-child))::after {
-    background: rgba(255, 255, 255, 0.5); /* Transparent white */
+    background: rgba(255, 255, 255, 0.5); 
 }
 
 .obj {
     text-decoration: none;
     color: white;
-    margin: 0 20px; /* Adjust margin to avoid excessive spacing */
+    margin: 0 30px;
+    
 }
 
-
-
+#logo{
+    text-align: left;
+    color: beige;
+    font-size: 20px;
+    margin-left: 20px;
+}
 
 #wall {
     color: rgb(248, 83, 18);
@@ -88,10 +75,10 @@
     margin-block: 40px;
     width: 400px;
     height: 300px;
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for hover */
+    transition: transform 0.3s ease, opacity 0.3s ease; 
 }
 
-/* Hover effect on images */
+
 #imghover a:hover #image {
     transform: scale(1.05); 
     opacity: 0.8; 
@@ -112,12 +99,7 @@
     background-color:rgb(244 214 184)
 }
 
-/* #image {
-    margin-left:44px;
-    margin-block: 40px;
-    width: 400px;
-    height: 300px;
-} */
+
 
 #flavourimg {
     margin-block: 100px;
@@ -125,26 +107,18 @@
     width: 1200px;
     height: 700px;
     border-radius: 3%;
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for hover effects */
+    transition: transform 0.3s ease, opacity 0.3s ease; 
 }
 
-/* Hover effect on the image */
+
 #flavourimg:hover {
-    transform: scale(1.05); /* Slightly enlarge the image */
-    opacity: 0.9; /* Reduce opacity to give a hover effect */
+    transform: scale(1.05); 
+    opacity: 0.9;
 }
-
-/* #flavourimg {
-    margin-block: 100px;
-    margin-left: 330px;
-    width: 1200px;
-    height: 700px;
-    border-radius: 3%;
-} */
 
 #flavourimg-container {
-    position: relative; /* To position text over the image */
-    display: inline-block; /* Keep the image's original size and alignment */
+    position: relative; 
+    display: inline-block; 
 }
 
 #flavourimg {
@@ -153,31 +127,31 @@
     width: 1200px;
     height: 700px;
     border-radius: 3%;
-    transition: opacity 0.3s ease; /* Smooth transition for fading the image */
+    transition: opacity 0.3s ease;
 }
 
-/* Text styling */
+
 #flavour-text {
     position: absolute;
-    top: 30%; /* Vertically center the text */
-    left: 50%; /* Horizontally center the text */
+    top: 30%; 
+    left: 50%; 
     transform: translate(-50%, -50%);
-    font-family:'Times New Roman', Times, serif; /* Example coffee-style font */
-    font-size: 60px; /* Make the text bigger */
-    font-weight: bold; /* Bold for more impact */
-    color: #f8f2f0; /* Coffee-inspired color */
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5); /* Stronger shadow to make text stand out */
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.3s ease; /* Smooth transition for fading in text */
+    font-family:'Times New Roman', Times, serif; 
+    font-size: 60px; 
+    font-weight: bold; 
+    color: #f8f2f0;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5); 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
 }
 
-/* Hover effect */
+
 #flavourimg-container:hover #flavourimg {
-    opacity: 0.8; /* Image becomes faint */
+    opacity: 0.8; 
 }
 
 #flavourimg-container:hover #flavour-text {
-    opacity: 1; /* Text becomes visible */
+    opacity: 1;
 }
 
 #left{
@@ -261,7 +235,6 @@
     margin-left: 50px;
 }
 
-/* added */
 #Aboutpro {
     background-color:rgb(244 214 184);
     position: relative;
@@ -283,7 +256,6 @@
     transition: opacity 0.3s ease;
 }
 
-/* added */
 .overlay {
     position: absolute;
     top: 0;
@@ -347,6 +319,13 @@ footer {
     padding: 0 20px;
     max-width: 1200px;
     margin: 0 auto;
+  }
+
+  h3{
+    text-align: center;
+  }
+  #read{
+    font-size: 15px;
   }
   
   .footer2,.foot {
