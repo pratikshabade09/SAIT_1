@@ -97,7 +97,7 @@ body{
         0, 0, 0, 0.5);
     cursor: pointer;
     font-size: 16px;
-    color: rgb(47, 14, 14);
+    font-color: rgb(47, 14, 14);
     font-weight: 600;
 }
 
@@ -108,7 +108,7 @@ body{
 }
 
 .register-link p a {
-    color: rgb(47, 14, 14);
+    font-color: rgb(47, 14, 14);
     text-decoration: none;
     font-weight: 600;
 }
